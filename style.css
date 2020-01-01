@@ -26,7 +26,6 @@ h1 {
 	font-family: 'Impact', fantasy;
 	color: #92000A;
 }
-
 h2 {
 	font-size: 2.8em;
 }
@@ -86,7 +85,7 @@ a:hover {
 	padding: 0px 0px 0px 0px;
 	letter-spacing: -3px;
 	text-transform: lowercase;
-	font-size: 48px;
+	font-size: 52px;
 	color: #92000A;
 }
 
@@ -104,30 +103,41 @@ a:hover {
     align-items: center;
     justify-content: center;
 	background: #E5E5E5 url(images/img01.jpg) repeat left top;
+	z-index: 0;
+	position: relative;
+}
+.img-town {
+	background: url(images/town1.jpg) no-repeat bottom;
+	width: 100%;
+	height: 130px;
+	position: absolute;
+	background-size: cover;
+	bottom: 0px;
 }
 
-#splash {
+.splash {
 	max-width: 940px;
     width: 100%;
     margin: 0px auto;
-    padding: 80px 0 30px 20px;
+    padding: 0px 0 300px 20px;
     box-sizing: border-box;
-    background: #fff;
 }
 
-#splash h2 {
+.splash h2 {
 	margin: 0px;
 	padding: 0px 0px 20px 0px;
 	font-family: Impact, fantasy;
-	font-size: 44px;
+	font-size: 82px;
 	color: #92000A;
+	text-align: center;
 }
 
-#splash p {
+.splash p {
 	line-height: 180%;
 	color: #92000A;
 	font-family: DejaVu Sans Mono, monospace;
 	font-weight: 900;
+	text-align: center;
 }
 
 .wrapper {
