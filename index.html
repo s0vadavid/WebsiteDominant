@@ -9,8 +9,29 @@
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css' />
 <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
 </head>
 <body>
+<div class="slider">
+      <div class="slider__wrapper">
+      <div class="slider__items">
+        <div class="slider__item">
+          <div style="height: 250px; background: #92000A;"></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 250px; background: #92000A;"></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 250px; background: #92000A;"></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 250px; background: #92000A;"></div>
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button"></a>
+    <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+</div>
 <div class="header container">
 	<div class="logo">
 		<h1><a href="#">Домінант</a></h1>
@@ -26,7 +47,7 @@
 <div class="splash-wrapper">
 	<div class="splash">
 		<h2>Агенство нерухомості "Домінант" Умань</h2>
-		<marquee behavior="scroll" direction="left" font-size="10"; scrollamount="2">Real estate agency "Dominant" *** Агентство недвижимости "Доминант" *** Real estate agency "Dominant" *** Агентство недвижимости "Доминант"</marquee>
+		<marquee height: 20 behavior="scroll" direction="left"; scrollamount="2">Real estate agency "Dominant" *** Агентство недвижимости "Доминант" *** Real estate agency "Dominant" *** Агентство недвижимости "Доминант"</marquee>
 	</div>
 	<div class="img-town">
 	</div>
@@ -132,10 +153,27 @@
 </div>
 <div id="footer">
 	<div class="content">
-		<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+		<p>&copy; Untitled. All rights reserved.</p>
 	</div>
 </div>
 <!-- end #footer -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+    (function ($) {
+      $(window).on("load", function () {
+        $('body').mCustomScrollbar({
+          theme: "dark-thin"
+        });
+      });
+    })(jQuery);
+</script>
+  <script src="js/slider.js"></script>
+  <script>
+    slideShow('.slider', {
+      isAutoplay: true
+    });
+  </script>
 </body>
 
 </html>
