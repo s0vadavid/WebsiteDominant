@@ -1,0 +1,23 @@
+[debug] [2020-01-09T06:37:00.072Z] ----------------------------------------------------------------------
+[debug] [2020-01-09T06:37:00.074Z] Command:       /usr/local/bin/node /usr/local/bin/firebase use stag-implant-compare
+[debug] [2020-01-09T06:37:00.074Z] CLI Version:   6.3.0
+[debug] [2020-01-09T06:37:00.074Z] Platform:      darwin
+[debug] [2020-01-09T06:37:00.074Z] Node Version:  v10.13.0
+[debug] [2020-01-09T06:37:00.075Z] Time:          Thu Jan 09 2020 08:37:00 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-01-09T06:37:00.075Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-01-09T06:37:00.086Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-09T06:37:00.086Z] > authorizing via signed-in user
+[debug] [2020-01-09T06:37:00.088Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-09T06:37:00.088Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-09T06:37:00.303Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-09T06:37:00.420Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2020-01-09T06:37:01.098Z] Error: certificate has expired
+    at TLSSocket.onConnectSecure (_tls_wrap.js:1049:34)
+    at TLSSocket.emit (events.js:182:13)
+    at TLSSocket.EventEmitter.emit (domain.js:442:20)
+    at TLSSocket._finishInit (_tls_wrap.js:631:8)
+[error] 
+[error] Error: Server Error. certificate has expired
