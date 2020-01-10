@@ -53,8 +53,8 @@ a:hover {
   position: relative;
   overflow: hidden;
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 200;
+  height: 200px;
 }
 
 /* стили для обёртки, в которой заключены слайды */
@@ -191,10 +191,10 @@ a:hover {
 	color: #FFFFFF;
 }
 
-#logo h1, #logo p {
+.logo h1, .logo p {
 }
 
-#logo h1 {
+.logo h1 {
 	padding: 0px 0px 0px 0px;
 	letter-spacing: -3px;
 	text-transform: lowercase;
@@ -202,7 +202,7 @@ a:hover {
 	color: #92000A;
 }
 
-#logo h1 a {
+.logo h1 a {
 	color: #92000A;;
 }
 
@@ -218,14 +218,7 @@ a:hover {
 	background: #E5E5E5 url(images/img01.jpg) repeat left top;
 	z-index: 0;
 	position: relative;
-}
-.img-town {
-	background: url(images/town1.jpg) no-repeat bottom;
-	width: 100%;
-	height: 130px;
-	position: absolute;
-	background-size: cover;
-	bottom: 0px;
+	max-width: 100%;
 }
 
 .splash {
@@ -257,6 +250,8 @@ a:hover {
 	position: relative;
 	display: flex;
     justify-content: space-around;
+	width: 100%;
+	max-width: 100%;
 }
 
 .control-line {
@@ -269,43 +264,6 @@ a:hover {
 }
 
 
-/* Search */
-
-#search {
-	width: 280px;
-	height: 40px;
-	padding: 20px 0px 0px 0px;
-}
-
-#search form {
-	height: 41px;
-	margin: 0;
-	padding: 10px 0 0 20px;
-}
-
-#search fieldset {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-
-#search-text {
-	width: 170px;
-	padding: 7px 5px 5px 5px;
-	border: 1px solid #DDDDDD;
-	background: #FFFFFF;
-	text-transform: lowercase;
-	font: normal 11px Arial, Helvetica, sans-serif;
-	color: #5D781D;
-}
-
-#search-submit {
-	width: 50px;
-	height: 25px;
-	border: none;
-	background: #B9B9B9;
-	color: #000000;
-}
 
 /* Menu */
 
@@ -315,7 +273,6 @@ a:hover {
 }
 
 .menu ul {
-	float: right;
 	margin: 0px;
 	padding: 28px 0px 0px 0px;
 	list-style: none;
@@ -358,10 +315,10 @@ a:hover {
 
 /* Content */
 
-#content {
-	float: left;
-	width: 620px;
+.content {
+	width: 100%;
 	padding: 70px 10px 0px 10px;
+	max-width: 100%;
 }
 
 /*SLIDER*/
@@ -395,6 +352,8 @@ a:hover {
 	padding: 30px;
 	background: url(images/img11.jpg) repeat-x left top;
 	border: 1px solid #E2E2E2;
+	width: 100%;
+	max-width: 100%;
 }
 
 .post .title {
@@ -461,121 +420,26 @@ a:hover {
 	padding: 0px 0px 0px 0px;
 }
 
-/* Sidebar */
-
-#sidebar {
-	float: right;
-	width: 280px;
-}
-
-#sidebar-bgtop {
-}
-
-#sidebar-bgbtm {
-	overflow: hidden;
-	padding: 80px 0px 0px 0px;
-}
-
-
-#sidebar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#sidebar li {
-	margin: 0;
-	padding: 0;
-}
-
-#sidebar li ul {
-	margin: 0px 0px;
-	padding-bottom: 50px;
-}
-
-#sidebar li li {
-	line-height: 35px;
-	border-bottom: 1px dashed #927160;
-	margin: 0px 30px;
-	font-weight: normal;
-}
-
-#sidebar li li span {
-	display: block;
-	margin-top: -20px;
-	padding: 0;
-	font-style: italic;
-}
-
-#sidebar li li a {
-	padding: 0px 0px 0px 0px;
-	color: #927160;
-}
-
-#sidebar h2 {
-	height: 40px;
-	margin: 0px 10px 20px 10px;
-	padding: 7px 0px 0px 20px;
-	background: url(images/img10.jpg) no-repeat left top;
-	text-align: left;
-	text-transform: uppercase;
-	text-shadow: 1px 2px 2px #000000;
-	font-size: 14px;
-	font-weight: normal;
-	color: #FFFFFF;
-}
-
-#sidebar p {
-	margin: 0 0px;
-	padding: 0px 30px 20px 30px;
-	text-align: justify;
-}
-
-#sidebar a {
-	border: none;
-}
-
-#sidebar a:hover {
-	text-decoration: underline;
-}
-
-/* Calendar */
-
-#calendar {
-}
-
-#calendar_wrap {
-	padding: 20px;
-}
-
-#calendar table {
-	width: 100%;
-}
-
-#calendar tbody td {
-	text-align: center;
-}
-
-#calendar #next {
-	text-align: right;
-}
-
 /* Footer */
 
-#footer {
-	height: 150px;
-	background: #FFFFFF;
-	padding: 0px 0 15px 0;
-	font-family: Arial, Helvetica, sans-serif;
+.footer {
+	overflow: hidden;
+	margin-top: 20px;
+	padding: 30px;
+	background: url(images/img11.jpg) repeat-x left top;
+	border: 1px solid #E2E2E2;
+	width: 100%;
+	max-width: 100%;
+
 }
 
-#footer .content {
+.footer .content {
 	width: 880px;
 	margin: 0px auto;
 	padding: 60px 40px 0px 40px;
 }
 
-#footer p {
+.footer p {
 	margin: 0;
 	padding-top: 30px;
 	line-height: normal;
@@ -586,6 +450,6 @@ a:hover {
 	font-weight: normal;
 }
 
-#footer a {
+.footer a {
 }
 

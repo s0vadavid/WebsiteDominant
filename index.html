@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="keywords" content="" />
+<meta name="keywords" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <meta name="description" content="" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>Домінант</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
@@ -15,7 +15,6 @@
 
 </head>
 <body>
-
 <div class="header container">
 	<div class="logo">
 		<h1><a href="#">Домінант</a></h1>
@@ -33,14 +32,33 @@
 		<h2>Агенство нерухомості "Домінант" Умань</h2>
 		<marquee height: 20 behavior="scroll" direction="left"; scrollamount="2">Real estate agency "Dominant" *** Агентство недвижимости "Доминант" *** Real estate agency "Dominant" *** Агентство недвижимости "Доминант"</marquee>
 	</div>
-	<div class="img-town">
+	<div class="slider">
+      <div class="slider__wrapper">
+      <div class="slider__items">
+        <div class="slider__item">
+          <div style="height: 200px; background: #92000A;"></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px; background: #92000A;"></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px; background: #92000A;"></div>
+        </div>
+        <div class="slider__item">
+          <div style="height: 200px; background: #92000A;"></div>
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button"></a>
+    <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+</div>
 	</div>
 </div>
 <!-- end #header -->
 <div class="wrapper">
 	<div class="control-line"> </div>
 	<div class="page">
-		<div id="content">
+		<div class="content">
 			<!--<div class="post">-->
 				<!--<div class="slider">-->
 					<!--<div class="slider__wrapper">-->
@@ -73,6 +91,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="post" id="post-1">
 				<h2 class="title"><a href="#">Про нас</a></h2>
 				<!--<p class="meta">-->
@@ -89,77 +108,43 @@
 				<!--<p class="meta"><span class="date">December 11, 2011</span><span class="posted">Posted by <a href="#">Someone</a></span></p>-->
 
 				<div class="entry">
-					<p>Контактний телефон: 8063********</p>
+					<p>Контактний телефон: 063********</p>
+				</div>
+			</div>
+			<div class="post">
+				<h2>Tabs in a Grid</h2>
+
+				<div class="tab">
+					<a href="javascript:void(0)" onclick="openCity(event, 'London');">
+						<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">London</div>
+					</a>
+					<a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+						<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Paris</div>
+					</a>
+					<a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+						<div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Tokyo</div>
+					</a>
+				</div>
+
+				<div id="London" class="w3-container city" style="display:none">
+					<h2>London</h2>
+					<p>London is the capital city of England.</p>
+				</div>
+
+				<div id="Paris" class="w3-container city" style="display:none">
+					<h2>Paris</h2>
+					<p>Paris is the capital of France.</p>
+				</div>
+
+				<div id="Tokyo" class="w3-container city" style="display:none">
+					<h2>Tokyo</h2>
+					<p>Tokyo is the capital of Japan.</p>
 				</div>
 			</div>
 		</div>
+
 		<!-- end #content -->
-		<div id="sidebar">
-			<div id="sidebar-bgtop">
-				<div id="sidebar-bgbtm">
-					<ul>
-						<li>
-							<div id="search" >
-								<form method="get" action="#">
-									<div>
-										<input type="text" name="s" id="search-text" value="" />
-										<input type="submit" id="search-submit" value="GO" />
-									</div>
-								</form>
-							</div>
-							<div style="clear: both;">&nbsp;</div>
-						</li>
-						<li>
-							<h2>Aliquam tempus</h2>
-							<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
-						</li>
-						<li>
-							<h2>Ми в соціальних мережах</h2>
-							<ul>
-								<li><a href="#">Instagram</a></li>
-								<li><a href="https://www.facebook.com/%D0%9D%D0%B5%D1%80%D1%83%D1%85%D0%BE%D0%BC%D1%96%D1%81%D1%82%D1%8C-%D0%A3%D0%BC%D0%B0%D0%BD%D1%8C-%D0%94%D0%BE%D0%BC%D1%96%D0%BD%D0%B0%D0%BD%D1%82-110554283770023/?modal=admin_todo_tour" target="_blank">Facebook</a></li>
-								<li><a href="#">Metus aliquam pellentesque</a></li>
-								<li><a href="#">Suspendisse iaculis mauris</a></li>
-								<li><a href="#">Urnanet non molestie semper</a></li>
-								<li><a href="#">Proin gravida orci porttitor</a></li>
-							</ul>
-						</li>
-						<li>
-							<h2>Blogroll</h2>
-							<ul>
-								<li><a href="#">Aliquam libero</a></li>
-								<li><a href="#">Consectetuer adipiscing elit</a></li>
-								<li><a href="#">Metus aliquam pellentesque</a></li>
-								<li><a href="#">Suspendisse iaculis mauris</a></li>
-								<li><a href="#">Urnanet non molestie semper</a></li>
-								<li><a href="#">Proin gravida orci porttitor</a></li>
-							</ul>
-						</li>
-						<li>
-							<h2>Archives</h2>
-							<ul>
-								<li><a href="#">Aliquam libero</a></li>
-								<li><a href="#">Consectetuer adipiscing elit</a></li>
-								<li><a href="#">Metus aliquam pellentesque</a></li>
-								<li><a href="#">Suspendisse iaculis mauris</a></li>
-								<li><a href="#">Urnanet non molestie semper</a></li>
-								<li><a href="#">Proin gravida orci porttitor</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- end #sidebar -->
-		<div style="clear: both;">&nbsp;</div>
-	</div>
-	<!-- end #page -->
-</div>
-<div id="footer">
-	<div class="content">
-		<p>&copy; Untitled. All rights reserved.</p>
-	</div>
-</div>
+
 <!-- end #footer -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -183,8 +168,22 @@
 		});
 	  })(jQuery);
 	</script>
-
-
+		<script>
+			function openCity(evt, cityName) {
+				var i, x, tablinks;
+				x = document.getElementsByClassName("city");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablink");
+				for (i = 0; i < x.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.firstElementChild.className += " w3-border-red";
+			}
+		</script>
+	</div>
 
 <!-- FIREBASE START -->
 <!-- The core Firebase JS SDK is always required and must be listed first -->
