@@ -10,6 +10,7 @@ var settings = {
 	styles: true,
 	svgs: true,
 	copy: true,
+	fonts: true,
 	reload: true
 };
 
@@ -38,6 +39,10 @@ var paths = {
 		input: 'src/markup/**/*',
 		output: 'dist/'
 	},
+  fonts: {
+    input: 'src/fonts/**/*',
+    output: 'dist/fonts'
+  },
 	reload: './dist/'
 };
 
@@ -237,6 +242,17 @@ var copyFiles = function (done) {
 
 };
 
+var copyFonts = function (done) {
+
+	// Make sure this feature is activated before running
+	if (!settings.fonts) return done();
+
+	// Copy static files
+	return src(paths.fonts.input)
+		.pipe(dest(paths.fonts.output));
+
+};
+
 // Watch for changes to the src directory
 var startServer = function (done) {
 
@@ -282,7 +298,8 @@ exports.default = series(
 		lintScripts,
 		buildStyles,
 		buildSVGs,
-		copyFiles
+		copyFiles,
+    copyFonts,
 	)
 );
 

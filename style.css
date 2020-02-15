@@ -215,7 +215,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-	background: #E5E5E5 url(images/img01.jpg) repeat left top;
+	background: #E5E5E5 url(src/images/img01.jpg) repeat left top;
 	z-index: 0;
 	position: relative;
 	max-width: 100%;
@@ -350,7 +350,7 @@ a:hover {
 	overflow: hidden;
 	margin-top: 20px;
 	padding: 30px;
-	background: url(images/img11.jpg) repeat-x left top;
+	background: url(src/images/img11.jpg) repeat-x left top;
 	border: 1px solid #E2E2E2;
 	width: 100%;
 	max-width: 100%;
@@ -426,7 +426,7 @@ a:hover {
 	overflow: hidden;
 	margin-top: 20px;
 	padding: 30px;
-	background: url(images/img11.jpg) repeat-x left top;
+	background: url(src/images/img11.jpg) repeat-x left top;
 	border: 1px solid #E2E2E2;
 	width: 100%;
 	max-width: 100%;

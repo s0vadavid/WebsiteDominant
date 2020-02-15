@@ -1,17 +1,49 @@
-/**
- * @section Base Styles
- */
+
 
 body {
-	font-size: 125%;
-	margin: 0 auto;
-	max-width: 42em;
-	width: 88%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #92000A;
+}
+html, body{
+	height: 100%;
 }
 
-input,
-textarea,
-select,
-button {
-	font: inherit;
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arvo', serif;
+	font-weight: normal;
+	color: #92000A;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: 'Impact', fantasy;
+	color: #92000A;
+}
+h2 {
+	font-size: 2.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 240%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #92000A;
+}
+
+a:hover {
 }
