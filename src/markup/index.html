@@ -52,7 +52,7 @@
 			<a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
 		</div>
 	</div>
-	<!-- end #header -->
+
 	<div class="wrapper">
 		<div class="control-line"> </div>
 		<div class="page">
@@ -143,68 +143,55 @@
 		</div>
 	</div>
 
-			<!-- end #content -->
+	<!-- SCRIPTS -->
 
-			<!-- end #footer -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script type="text/javascript" src="../js/slick.min.js"></script>
-			<script>
-				(function ($) {
-					$('.single-item').slick({
-						infinite: true,
-						slidesToShow: 1,
-						dots: true,
-						autoplay: true,
-					});
-				})(jQuery);
-			</script>
-			<script>
-				function openCity(evt, cityName) {
-					var i, x, tablinks;
-					x = document.getElementsByClassName("city");
-					for (i = 0; i < x.length; i++) {
-						x[i].style.display = "none";
-					}
-					tablinks = document.getElementsByClassName("tablink");
-					for (i = 0; i < x.length; i++) {
-						tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
-					}
-					document.getElementById(cityName).style.display = "block";
-					evt.currentTarget.firstElementChild.className += " w3-border-red";
-				}
-			</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/slick.min.js"></script>
+	<script>
+    (function ($) {
+      $('.single-item').slick({
+        infinite: true,
+        slidesToShow: 1,
+        dots: true,
+        autoplay: true,
+      });
+    })(jQuery);
+	</script>
+	<script>
+		function openCity(evt, cityName) {
+			var i, x, tablinks;
+			x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < x.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.firstElementChild.className += " w3-border-red";
+		}
+	</script>
 
-			<!-- Scripts -->
-			<!--<script src="./js/main.js"></script>-->
-			<script src="../js/main/firebase.js"></script>
+	<!-- FIREBASE START -->
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyAJVeqnRpAKU0WUfp6L6fBN9wNVh_EuX6c",
+			authDomain: "dominantwebsite.firebaseapp.com",
+			databaseURL: "https://dominantwebsite.firebaseio.com",
+			projectId: "dominantwebsite",
+			storageBucket: "dominantwebsite.appspot.com",
+			messagingSenderId: "257071783597",
+			appId: "1:257071783597:web:9396458bd94fc773797024",
+			measurementId: "G-4NBFQ61TX4"
+		};
 
-			<!-- FIREBASE START -->
-			<!-- The core Firebase JS SDK is always required and must be listed first -->
-			<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-
-			<!-- TODO: Add SDKs for Firebase products that you want to use
-						 https://firebase.google.com/docs/web/setup#available-libraries -->
-			<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
-
-
-
-		<script>
-			// Your web app's Firebase configuration
-			var firebaseConfig = {
-				apiKey: "AIzaSyAJVeqnRpAKU0WUfp6L6fBN9wNVh_EuX6c",
-				authDomain: "dominantwebsite.firebaseapp.com",
-				databaseURL: "https://dominantwebsite.firebaseio.com",
-				projectId: "dominantwebsite",
-				storageBucket: "dominantwebsite.appspot.com",
-				messagingSenderId: "257071783597",
-				appId: "1:257071783597:web:9396458bd94fc773797024",
-				measurementId: "G-4NBFQ61TX4"
-			};
-			// Initialize Firebase
-			firebase.initializeApp(firebaseConfig);
-			firebase.analytics();
-		</script>
-		<!-- FIREBASE END -->
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	</script>
+	<!-- FIREBASE END -->
 </body>
 
 </html>
