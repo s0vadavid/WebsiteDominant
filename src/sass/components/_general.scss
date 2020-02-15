@@ -25,21 +25,18 @@
   display: flex;
   align-items: center;
   color: #FFFFFF;
-}
 
-#logo h1, #logo p {
-}
+  h1 {
+    padding: 0;
+    letter-spacing: -3px;
+    text-transform: lowercase;
+    font-size: 52px;
+    color: #92000A;
 
-#logo h1 {
-  padding: 0px 0px 0px 0px;
-  letter-spacing: -3px;
-  text-transform: lowercase;
-  font-size: 52px;
-  color: #92000A;
-}
-
-#logo h1 a {
-  color: #92000A;;
+    a {
+      color: #92000A;;
+    }
+  }
 }
 
 /* Splash */
@@ -51,42 +48,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //background: #E5E5E5 url(./images/img01.jpg) repeat left top;
+  background: #E5E5E5 url('../../images/img01.jpg') repeat left top;
   z-index: 0;
   position: relative;
+
+  .splash {
+    max-width: 940px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 0 200px 20px;
+    box-sizing: border-box;
+
+    h2 {
+      margin: 0px;
+      padding: 0px 0px 0px 0px;
+      font-family: Impact, fantasy;
+      font-size: 82px;
+      color: #92000A;
+      text-align: center;
+    }
+
+    p {
+      line-height: 180%;
+      color: #92000A;
+      font-family: DejaVu Sans Mono, monospace;
+      font-weight: 900;
+      text-align: center;
+    }
+  }
 }
+
 .img-town {
-  //background: url(./images/town1.jpg) no-repeat bottom;
+  background: url('../../images/town1.jpg') no-repeat bottom;
   width: 100%;
   height: 130px;
   position: absolute;
   background-size: cover;
   bottom: 0px;
-}
-
-.splash {
-  max-width: 940px;
-  width: 100%;
-  margin: 0px auto;
-  padding: 0px 0 200px 20px;
-  box-sizing: border-box;
-}
-
-.splash h2 {
-  margin: 0px;
-  padding: 0px 0px 0px 0px;
-  font-family: Impact, fantasy;
-  font-size: 82px;
-  color: #92000A;
-  text-align: center;
-}
-
-.splash p {
-  line-height: 180%;
-  color: #92000A;
-  font-family: DejaVu Sans Mono, monospace;
-  font-weight: 900;
-  text-align: center;
 }
 
 .wrapper {
@@ -229,7 +227,7 @@
   overflow: hidden;
   margin-top: 20px;
   padding: 30px;
-  //background: url(images/img11.jpg) repeat-x left top;
+  //background: url(../../images/img11.jpg) repeat-x left top;
   border: 1px solid #E2E2E2;
 }
 
@@ -352,7 +350,7 @@
   height: 40px;
   margin: 0px 10px 20px 10px;
   padding: 7px 0px 0px 20px;
-  //background: url(images/img10.jpg) no-repeat left top;
+  //background: url(../../images/img10.jpg) no-repeat left top;
   text-align: left;
   text-transform: uppercase;
   text-shadow: 1px 2px 2px #000000;

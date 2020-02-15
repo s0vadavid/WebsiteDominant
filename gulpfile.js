@@ -11,6 +11,7 @@ var settings = {
 	svgs: true,
 	copy: true,
 	fonts: true,
+	images: true,
 	reload: true
 };
 
@@ -42,6 +43,10 @@ var paths = {
   fonts: {
     input: 'src/fonts/**/*',
     output: 'dist/fonts'
+  },
+  images: {
+    input: 'src/images/**/*',
+    output: 'dist/images'
   },
 	reload: './dist/'
 };
@@ -253,6 +258,17 @@ var copyFonts = function (done) {
 
 };
 
+var copyImages = function (done) {
+
+  // Make sure this feature is activated before running
+  if (!settings.images) return done();
+
+  // Copy static files
+  return src(paths.images.input)
+    .pipe(dest(paths.images.output));
+
+};
+
 // Watch for changes to the src directory
 var startServer = function (done) {
 
@@ -300,6 +316,7 @@ exports.default = series(
 		buildSVGs,
 		copyFiles,
     copyFonts,
+    copyImages,
 	)
 );
 
